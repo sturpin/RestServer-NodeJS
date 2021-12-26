@@ -1,7 +1,7 @@
-const { response } = require('express');
+const { request, response } = require('express');
 
 
-const usuariosGet = (req, res = response) => {
+const usuariosGet = (req = request, res = response) => {
 
     const { q, nombre = 'No name', apikey } = req.query;
 
